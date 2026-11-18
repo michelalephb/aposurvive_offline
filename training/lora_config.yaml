@@ -1,0 +1,24 @@
+# mlx-lm LoRA config. Run from the repo root on an Apple Silicon Mac:
+#   mlx_lm.lora --config training/lora_config.yaml
+# Key names follow the mlx-lm LORA.md example config. Confirm against
+# `mlx_lm.lora --help` for your installed version before the first run.
+
+model: mlx-community/Qwen3-4B-Instruct-2507-4bit   # 4 bit base -> QLoRA, same weights the app loads
+train: true
+fine_tune_type: lora
+data: data                  # data/train.jsonl, data/valid.jsonl from training.validate_dataset
+mask_prompt: true           # loss on the assistant reply only
+num_layers: 16
+batch_size: 4               # drop to 2 on a 16 GB Mac if memory pressure shows
+iters: 1000
+learning_rate: 1.0e-5
+steps_per_report: 20
+steps_per_eval: 100
+save_every: 200
+max_seq_length: 2048
+adapter_path: adapters
+seed: 7
+lora_parameters:
+  rank: 8
+  scale: 20.0
+  dropout: 0.0

@@ -1,0 +1,27 @@
+# secrets
+.env
+*.env
+
+# downloaded and derived corpus
+corpus/raw/
+corpus/work/
+build/
+
+# generated datasets and training artifacts
+training/out/
+training/review/review_queue.csv
+data/
+adapters/
+
+# iOS generated
+ios/*.xcodeproj/
+ios/AposurviveOffline/Resources/library.sqlite
+ios/AposurviveOffline/Resources/library_manifest.json
+ios/AposurviveOffline/Resources/runtime_system.txt
+DerivedData/
+*.xcuserstate
+
+# python
+__pycache__/
+.pytest_cache/
+.venv/

@@ -1,0 +1,63 @@
+# Static field cards: shown when the model is off (low battery, heat, not downloaded).
+# Card text is NEVER written by hand or by a model. The builder copies verbatim chunks
+# from the manuals, so every card is the manual's own words.
+#
+# Selection, in order of preference:
+#   pages:  pin exact PDF pages after a human has checked them (survives rebuilds)
+#   query:  BM25 search fallback, used until someone pins pages
+# reviewed: set true only after a human has read the card end to end.
+#           The app shows an "Unreviewed" badge while this is false.
+
+cards:
+  - id: bleeding_control
+    title: "Bleeding control"
+    subtitle: "Direct pressure, elevation, tourniquet"
+    category: injury
+    query: "bleeding control direct pressure elevation pressure points tourniquet"
+    max_chunks: 3
+    reviewed: false
+
+  - id: water_purification
+    title: "Water purification"
+    subtitle: "Boil, tablets, filter"
+    category: water
+    query: "water purification boil iodine chlorine tablets filter"
+    max_chunks: 3
+    reviewed: false
+
+  - id: universal_edibility
+    title: "Universal edibility test"
+    subtitle: "Do not skip steps"
+    category: food
+    query: "universal edibility test plant"
+    max_chunks: 3
+    reviewed: false
+
+  - id: ground_to_air
+    title: "Ground to air signals"
+    subtitle: "Panels and symbols"
+    category: signal
+    query: "ground to air emergency code symbols signal"
+    max_chunks: 3
+    reviewed: false
+
+  - id: hypothermia
+    title: "Cold injury"
+    subtitle: "Hypothermia, frostbite"
+    category: cold_heat
+    query: "hypothermia frostbite treatment rewarming"
+    max_chunks: 3
+    reviewed: false
+
+  - id: fire_starting
+    title: "Fire starting"
+    subtitle: "Tinder, kindling, fuel"
+    category: fire
+    query: "tinder kindling fuel fire starting"
+    max_chunks: 3
+    reviewed: false
+
+# Example of a pinned card once reviewed:
+#  - id: bleeding_control
+#    pages: {doc: atp_3_50_21, from: 52, to: 54}
+#    reviewed: true

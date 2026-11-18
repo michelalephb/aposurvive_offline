@@ -1,0 +1,6 @@
+pypdf>=6.0
+pyyaml>=6.0
+openai>=1.40      # DeepSeek teacher calls (OpenAI compatible endpoint)
+pytest>=8.0
+reportlab>=4.0    # tests only
+# On the Mac that trains: pip install mlx-lm

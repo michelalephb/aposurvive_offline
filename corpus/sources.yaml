@@ -1,0 +1,21 @@
+# Source documents for the offline library.
+# Only public domain / unlimited distribution material goes here.
+# If a URL dies, drop the PDF into corpus/raw/<id>.pdf by hand; fetch skips files that exist.
+
+documents:
+  - id: atp_3_50_21
+    short: "ATP 3-50.21"
+    title: "Survival (Army Techniques Publication, 2018)"
+    url: "https://irp.fas.org/doddir/army/atp3-50-21.pdf"
+    official_source: "https://armypubs.army.mil"
+    license_note: "Cover page: Approved for public release; distribution is unlimited."
+
+  - id: fm_21_76_1
+    short: "FM 21-76-1"
+    title: "Survival, Evasion, and Recovery (Multiservice, June 1999)"
+    url: "https://rmp.nc.gov/LCF/Publications/AL_Resources/Survival/Multi%20Service%20Survival%20Manual.pdf"
+    official_source: "Air Land Sea Application Center"
+    license_note: "Cover page: Approved for public release; distribution is unlimited."
+
+# Deferred to v02 (not ingested yet):
+#   WikiMed (Kiwix ZIM). Needs libzim parsing and a license check for redistribution inside an app.
